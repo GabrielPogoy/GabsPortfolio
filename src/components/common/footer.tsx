@@ -1,88 +1,93 @@
+import { NavLink } from "react-router";
+
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-gray-300">
+    <footer className="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-slate-300">
 
       <div className="max-w-7xl mx-auto px-6 py-16">
 
-        <div className="grid md:grid-cols-3 gap-10 items-center">
+        <div className="grid md:grid-cols-3 gap-12">
 
           {/* Brand */}
           <div>
-            <h2 className="text-3xl font-extrabold text-white">
-              Jedan Tura
+            <h2 className="text-3xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              Gabriel Pogoy
             </h2>
 
-            <p className="mt-3 text-gray-400 leading-7">
-              Front-End Developer creating modern,
-              responsive, and user-friendly websites.
+            <p className="mt-4 leading-7 text-slate-400">
+              Front-End Developer passionate about creating
+              responsive, modern, and user-friendly web applications
+              with clean code and beautiful interfaces.
             </p>
           </div>
 
-
-          {/* Links */}
+          {/* Navigation */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">
+            <h3 className="text-xl font-semibold text-white mb-5">
               Quick Links
             </h3>
 
             <div className="flex flex-col gap-3">
 
-              <a 
-                href="#home"
-                className="hover:text-blue-400 transition"
+              <NavLink
+                to="/"
+                className="hover:text-cyan-400 transition"
               >
                 Home
-              </a>
+              </NavLink>
 
-              <a 
-                href="#about"
-                className="hover:text-blue-400 transition"
+              <NavLink
+                to="/about"
+                className="hover:text-cyan-400 transition"
               >
                 About
-              </a>
+              </NavLink>
 
-              <a 
-                href="#skills"
-                className="hover:text-blue-400 transition"
+              <NavLink
+                to="/skills"
+                className="hover:text-cyan-400 transition"
               >
                 Skills
-              </a>
+              </NavLink>
 
-              <a 
-                href="#contact"
-                className="hover:text-blue-400 transition"
-              >
-                Contact
-              </a>
+             
 
             </div>
           </div>
 
-
-          {/* Social */}
+          {/* Contact */}
           <div>
 
-            <h3 className="text-xl font-semibold text-white mb-4">
-              Connect With Me
+            <h3 className="text-xl font-semibold text-white mb-5">
+              Get In Touch
             </h3>
 
-            <div className="flex gap-3">
+            <div className="space-y-3">
 
-              <a
-                href="https://github.com/CallmeJed18/Jedan-Honest-React/blob/main/src/assets/pages/home.tsx"
-                className="px-4 py-2 bg-white/10 rounded-lg hover:bg-blue-600 hover:text-white transition"
-              >
-                GitHub
-              </a>
+              <p>
+                📧 gabrielpogoy@email.com
+              </p>
 
-              
+              <p>
+                📱 +63 9922803815
+              </p>
 
-              <a
-                href="https://www.facebook.com/jedan.tura.5"
-                className="px-4 py-2 bg-white/10 rounded-lg hover:bg-blue-600 hover:text-white transition"
-              >
-                Facebook
-              </a>
+              <div className="flex gap-3 pt-3">
+
+                <a
+                  href="https://github.com/dashboard"
+                  className="px-4 py-2 rounded-lg bg-white/10 hover:bg-cyan-500 transition"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.facebook.com/"
+                  className="px-4 py-2 rounded-lg bg-white/10 hover:bg-cyan-500 transition"
+                >
+                  Facebook
+                </a>
+
+              </div>
 
             </div>
 
@@ -90,16 +95,19 @@ export function Footer() {
 
         </div>
 
-
         {/* Bottom */}
-        <div className="border-t border-slate-700 mt-12 pt-8 text-center">
+        <div className="border-t border-slate-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 
-          <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} 
-            <span className="text-white font-semibold">
-              {" "}Jedan Tura
+          <p className="text-sm text-slate-400">
+            © {new Date().getFullYear()}{" "}
+            <span className="font-semibold text-white">
+              Gabriel Pogoy
             </span>
             . All Rights Reserved.
+          </p>
+
+          <p className="text-sm text-slate-500">
+            Built with React + Tailwind CSS
           </p>
 
         </div>
