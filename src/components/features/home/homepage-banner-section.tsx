@@ -29,7 +29,6 @@ export function HomePage() {
           </p>
         </div>
 
-        {/* Right */}
         <div className="flex justify-center">
           <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-[40px] p-4 shadow-2xl">
             <img
