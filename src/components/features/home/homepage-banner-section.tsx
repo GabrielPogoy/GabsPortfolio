@@ -1,12 +1,10 @@
 import Bg from "@/assets/images/gab.jpg";
-import { Button } from "@/components/ui/button";
 
 export function HomePage() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white flex items-center">
       <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center">
 
-        {/* Left */}
         <div>
           <span className="inline-block bg-blue-500/20 border border-blue-400 px-5 py-2 rounded-full text-blue-200">
             👋 Welcome to My Portfolio
@@ -29,19 +27,6 @@ export function HomePage() {
             My passion is creating clean interfaces that provide
             excellent user experiences.
           </p>
-
-          <div className="flex flex-wrap gap-5 mt-10">
-            <Button variant="secondary">
-              
-              <a href="/about">About Me</a>
-            </Button>
-
-            <Button variant="primary">
-             
-             <a href="/skills">My Skills
-             </a>
-            </Button>
-          </div>
         </div>
 
         {/* Right */}
