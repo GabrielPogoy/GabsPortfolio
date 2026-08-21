@@ -30,19 +30,6 @@ export function HomePage() {
             excellent user experiences.
           </p>
 
-          <div className="flex flex-wrap gap-5 mt-10">
-            <Button variant="secondary">
-              
-              <a href="/about">About Me</a>
-            </Button>
-
-            <Button variant="primary">
-             
-             <a href="/skills">My Skills
-             </a>
-            </Button>
-          </div>
-        </div>
 
         {/* Right */}
         <div className="flex justify-center">
