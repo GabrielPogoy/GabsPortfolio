@@ -1,12 +1,11 @@
 import Bg from "@/assets/images/gab.jpg";
-import { Button } from "@/components/ui/button";
 
 export function HomePage() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white flex items-center">
       <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center">
 
-        {/* Left */}
+      
         <div>
           <span className="inline-block bg-blue-500/20 border border-blue-400 px-5 py-2 rounded-full text-blue-200">
             👋 Welcome to My Portfolio
@@ -30,8 +29,24 @@ export function HomePage() {
             excellent user experiences.
           </p>
 
+       
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="/about"
+              className="px-6 py-3 rounded-xl border border-slate-600 bg-slate-800/60 hover:bg-slate-700/80 text-white font-medium transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+              About Me
+            </a>
 
-        {/* Right */}
+            <a
+              href="/skills"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold shadow-lg shadow-cyan-500/25 transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+              My Skills
+            </a>
+          </div>
+        </div> 
+       
         <div className="flex justify-center">
           <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-[40px] p-4 shadow-2xl">
             <img
